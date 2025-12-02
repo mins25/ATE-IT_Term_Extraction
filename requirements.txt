@@ -1,0 +1,8 @@
+spacy==3.7.2
+it-core-news-lg @ https://github.com/explosion/spacy-models/releases/download/it_core_news_lg-3.7.2/it_core_news_lg-3.7.2-py3-none-any.whl
+scikit-learn==1.5.1
+sklearn-crfsuite==0.3.6
+tqdm==4.66.2
+pandas==2.2.2
+numpy==1.26.4
+pathlib
