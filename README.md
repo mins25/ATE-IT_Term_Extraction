@@ -70,8 +70,6 @@ Ensure the following files are placed inside the `data/` directory:
 - `subtask_a_dev.json`
 - `test.csv`
 
-If your script merges train and dev into a single file such as `train_dev.json`, ensure this preprocessing step is done before running the model.
-
 ---
 
 ### 3.2 Run the full CRF pipeline
@@ -96,17 +94,7 @@ results/test_predictions.json
 
 ---
 
-## 4. Evaluation
-
-An optional `evaluate.py` script can be added to:
-
-- Evaluate predictions using micro F1 and type F1 scores  
-- Compare system output with gold development data  
-- Inspect error cases and term extraction performance  
-
----
-
-## 5. Final Results vs Baseline
+## 4. Final Results vs Baseline
 
 | Metric     | Model Score | Baseline |
 |------------|-------------|----------|
@@ -119,12 +107,11 @@ An optional `evaluate.py` script can be added to:
 
 ---
 
-## 6. Notes and Recommendations
+## 5. Notes and possible future improvements
 
 - The current model relies heavily on SpaCy's `it_core_news_lg` embeddings and POS tags  
 - CRF hyperparameters can be tuned for better performance  
-- Consider adding character-level or transformer-based features for future improvements  
-- For reproducibility, fix random seeds and document preprocessing steps  
+- Adding character-level or transformer-based features 
 
 ---
 
