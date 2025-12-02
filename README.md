@@ -1,9 +1,11 @@
 # ATE-IT_Term_Extraction
+Minseok KIM
 
 # Term Extraction Pipeline (CRF-Based)
 
-This project implements a Conditional Random Field (CRF) model for automatic term extraction in Italian text.  
-It provides a complete pipeline including data loading, feature extraction, BIO labeling, training, cross-validation, final model training, prediction on test data, and evaluation.
+The term-extraction system is built around a supervised sequence-labeling architecture that identifies domain-specific terms within Italian text. The core of the system is a Conditional Random Field (CRF) model trained on manually annotated sentences. The pipeline follows a classical yet proven approach: feature-rich token representation, BIO sequence labeling, and structured prediction optimized with L-BFGS.
+
+This project provides a complete pipeline including data loading, feature extraction, BIO labeling, training, cross-validation, final model training, prediction on test data, and evaluation.
 
 ---
 
@@ -112,10 +114,3 @@ results/test_predictions.json
 - The current model relies heavily on SpaCy's `it_core_news_lg` embeddings and POS tags  
 - CRF hyperparameters can be tuned for better performance  
 - Adding character-level or transformer-based features 
-
----
-
-## 7. License
-
-This project is released under an open research license.  
-You may freely reuse, modify, and extend the code for academic purposes.
