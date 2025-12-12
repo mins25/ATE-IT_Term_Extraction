@@ -63,19 +63,6 @@ python -m spacy download it_core_news_lg
 ---
 
 ## 3. Running the Pipeline
-
-### 3.1 Prepare your data
-
-Ensure the following files are placed inside the `data/` directory:
-
-- `subtask_a_train.json`
-- `subtask_a_dev.json`
-- `test.csv`
-
----
-
-### 3.2 Run the full CRF pipeline
-
 From the project root:
 
 ```
